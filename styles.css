@@ -15,10 +15,35 @@ body {
     grid-row: 1 / 6;
     background-color: #006BA6;
     display: grid;
+    grid-template-rows: repeat(32, 1fr);
+}
+
+.sub-side {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo {
+    grid-row-start: 2;
+}
+
+#logo-text {
+    font-size: 2rem;
+    color: #FFFFFF;
 }
 
 .nav-sect {
-    border: 1px solid black;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+}
+
+[id$=icon] {
+    grid-column: 2 / 3;
+}
+
+[id$=text] {
+    grid-column: 3 / 6;
 }
 
 #header {
