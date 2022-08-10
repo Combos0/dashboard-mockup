@@ -14,9 +14,14 @@ body {
     grid-column: 1 / 2;
     grid-row: 1 / 6;
     background-color: #006BA6;
+    display: grid;
 }
 
-#nav-bar {
+.nav-sect {
+    border: 1px solid black;
+}
+
+#header {
     grid-column: 2 / 6;
     grid-row: 1 / 2;
     background-color: #786452;
@@ -27,3 +32,4 @@ body {
     grid-row: 2 / 6;
     background-color: #FFFFFF;
 }
+
