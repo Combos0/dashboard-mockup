@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 #main-wrapper {
@@ -15,13 +16,28 @@ body {
     grid-row: 1 / 6;
     background-color: #006BA6;
     display: grid;
-    grid-template-rows: repeat(32, 1fr);
+    grid-template-rows: repeat(1, 4fr) repeat(6, 1fr) repeat(1, 2fr) repeat(20, 1fr);
+    row-gap: 6px;
 }
 
 .sub-side {
+    grid-column-start: 2;
     display: flex;
     justify-content: start;
     align-items: center;
+    gap: 1rem;
+}
+
+#settings-sidebar {
+    grid-row-start: 9;
+}
+
+#support-sidebar {
+    grid-row-start: 10;
+}
+
+#privacy-sidebar {
+    grid-row-start: 11;
 }
 
 .logo {
